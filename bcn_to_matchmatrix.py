@@ -33,20 +33,31 @@ more information available at: http://lxml.de/tutorial.html
 # set up storage for head to head match count
 h2h_counts = pd.DataFrame(0, index=player_names, columns=player_names)
 
+# set up storage for count of unique users beaten
+unique_wins = {}
+for x in player_names :
+    unique_wins[x] = set()
+
 # iterate over matches and increment counts
 for match in matches :
     p1 = match.get('Player1')
     p2 = match.get('Player2')
-    try :
+    if p1 in player_names.values and p2 in player_names.values :
         h2h_counts.loc[p1, p2] += 1
-    except KeyError :
-        pass
+        winner = match.get('Winner')
+        if winner == '1' :
+            unique_wins[p1].add(p2)
+        elif winner == '2' :
+            unique_wins[p2].add(p1)
 
 # write out information to a format convenient for igraph
 
-# nodes should be ID number (1 indexed) then name (comma separated)
-nodes = np.column_stack((np.arange(num_players_in_graph), player_names))
-np.savetxt('nodes.txt', nodes, delimiter=',', fmt='%s')
+# nodes should be comma separated ID number, name, unique wins
+with open('nodes.txt', 'w') as nodes :
+    for i in xrange(num_players_in_graph) :
+        name = player_names[i]
+        w_count = len(unique_wins[name])
+        nodes.write(str(i) + ',' + str(name) + ',' + str(w_count) + '\n')
 
 # edges should be comma separated id1, id2, weight
 with open('edges.txt', 'w') as edges :

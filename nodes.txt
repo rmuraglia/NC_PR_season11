@@ -1,35 +1,35 @@
-0,Dandy Penguin
-1,Kai
-2,Lazyboredom
-3,Kresent
-4,Donquavious
-5,Ferf
-6,Brownie
-7,Leaf FC
-8,Lucky Wind
-9,TreeBorn
-10,Dinner
-11,Mekos
-12,TH|DEEPBLUE
-13,Gael
-14,Drevis2020
-15,SIMBA
-16,Wind
-17,stingers
-18,Antiyami
-19,Cowhunter
-20,Sigtrick
-21,Gilgamesh
-22,GQ
-23,JKid
-24,Hood
-25,Heatstroke
-26,Putthatcookiedown
-27,TM | Haise
-28,YUM!
-29,Kam Steele
-30,dragoniota
-31,Stockfield
-32,Reign
-33,Musk Ox
-34,Lime
+0,Dandy Penguin,10
+1,Kai,22
+2,Lazyboredom,11
+3,Kresent,17
+4,Donquavious,11
+5,Ferf,16
+6,Brownie,11
+7,Leaf FC,14
+8,Lucky Wind,9
+9,TreeBorn,4
+10,Dinner,4
+11,Mekos,2
+12,TH|DEEPBLUE,5
+13,Gael,6
+14,Drevis2020,2
+15,SIMBA,6
+16,Wind,4
+17,stingers,8
+18,Antiyami,4
+19,Cowhunter,10
+20,Sigtrick,9
+21,Gilgamesh,3
+22,GQ,7
+23,JKid,4
+24,Hood,4
+25,Heatstroke,6
+26,Putthatcookiedown,5
+27,TM | Haise,7
+28,YUM!,2
+29,Kam Steele,6
+30,dragoniota,4
+31,Stockfield,5
+32,Reign,3
+33,Musk Ox,2
+34,Lime,2
